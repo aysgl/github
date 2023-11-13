@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.4s;
+}
+
+body {
+  font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: #0d1116;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  flex-direction: column;
+  max-width: 600px;
+}
+.container .search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 90%;
+}
+.container .search input {
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  width: 100%;
+  outline: none;
+  color: white;
+  padding: 0rem 2.5rem;
+  font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.container .search input::-moz-placeholder {
+  color: gray;
+}
+.container .search input::placeholder {
+  color: gray;
+}
+.container .search input::-ms-input-placeholder {
+  color: gray;
+}
+.container .search input:focus {
+  border: 2px solid rgb(47, 129, 247);
+}
+.container .search i {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: rgba(255, 255, 255, 0.2);
+}
+.container .userlist {
+  width: 90%;
+}
+.container .userlist .user {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.container .userlist .user-img img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50rem;
+  margin-top: 0.25rem;
+  margin-right: 0.5rem;
+}
+.container .userlist .user-info {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.container .userlist .user-info p:first-child {
+  color: rgb(47, 129, 247);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.container .userlist .user-info p:first-child span {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+}
+.container .userlist .user-info small {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+.container .userlist .user-info small span {
+  padding: 0.5rem;
+  vertical-align: super;
+}
+.container .userlist .user-info small i {
+  margin-right: 0.25rem;
+}
+.container .userlist .user-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  margin-top: 0.25rem;
+}
+.container .userlist .user-action .btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.45rem 0.65rem;
+  border-radius: 0.35rem;
+  margin-left: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.container .userlist .user-action .btn i {
+  color: #db61a2;
+  margin-right: 0.25rem;
+}/*# sourceMappingURL=style.css.map */
